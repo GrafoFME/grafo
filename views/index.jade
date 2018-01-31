@@ -1,5 +1,22 @@
-extends layout
+doctype html
 
-block content
-  h1= title
-  p Welcome to #{title}
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    body
+        div(class='container')
+            div(class='row justify-content-center align-items-center')
+                form(class='col-md-6', actiopn='/', method='POST')
+                    h1(classs='align-items-center')= title
+                    div(class='form-group mt-5')
+                        label(for='contra') Contraseña
+                        if (isValid)
+                            input(type='password', class='form-control', id='contra', name='contra', placeholder='Contraseña')
+                        else
+                            input(type='password', class='form-control is-invalid', id='contra', name='contra', placeholder='Contraseña')
+                        div(class='invalid-feedback') Contraseña incorrecta
+
+                    button(type='submit', class='btn btn-primary float-right') Enviar

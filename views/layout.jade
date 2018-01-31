@@ -1,7 +1,20 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    head
+        title= GraFME
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        header(role='banner' class='transparent light')
+            div(class='row')
+                div(class='nav-inner row-content buffer-left buffer-right even clear-after')
+                    div(id='brand')
+                        a(href='/')
+                            h1(class='reset')= GraFME
+                    a(href='#' id='menu-toggle' class='fa fa-bars fa-lg')
+                        i
+                    nav
+                        ul(class='reset' role='navigation')
+                            li(class='menu-item')
+                                a(href='/grafo'
+
+        block content
