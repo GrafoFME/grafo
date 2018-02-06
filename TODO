@@ -1,0 +1,18 @@
+- Añadir modos de visión y decidir el estilo visual para ellos
+    * Vertices con más aristas
+    * K's
+    * Aristas recientes
+    * Mapa de edades
+
+    > Propuesta: usar un mapa de colores para representarlo,
+        (más rojo = más aristas p.e.)
+
+- Decidir respecto a las GUI's (¿si?¿no?¿estilo?¿html o canvas?)
+    * Distancia entre dos personas
+    * Buscador?
+        > Consulta a la base de datos
+        > Buscador en el frontend
+- Hacer una zona no conexa (que los nodos no conexos no puedan "escapar"  y los conexos no puedan entrar)
+    * ¿Cálculos en backend o en frontend?
+
+- Importar el grafo actual
